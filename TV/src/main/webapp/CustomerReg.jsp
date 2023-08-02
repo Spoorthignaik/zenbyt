@@ -12,7 +12,7 @@
 		<div class="main">
 			<div class="navbar">
 				<div class="icon">
-					<h2 class="logo">Liv_TV</h2>
+					<h2 class="logo">Live_TV</h2>
 				</div>
 
                 <div class="dropdowns">
@@ -45,7 +45,7 @@
             </c:forEach>
             </div>
 					<input type="text" name="name" placeholder="Enter Full Name" value="${dto.name }">
-				    <input type="text" name="phoneNum" placeholder="Phone Number" value="${dto.phoneNum }">
+				    <input type="text" name="phoneNums" placeholder="Phone Number" value="${dto.phoneNums }">
 					<input type="text" name="password" placeholder="Enter Password" >
                     <input type="text" name="reenterpas" placeholder="Re Enter Password" >
 					<button class="btnn" href="index.jsp">Sign-Up</button>

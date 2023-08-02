@@ -54,5 +54,21 @@ public class LiveTvServiceImpl implements LiveTvService {
 		return null;
 	}
 
+	/* @Override
+	public LiveTvDto findByEmail(String email) {
+		if (email != null && !email.isEmpty()) {
+			System.out.println("Running the findByEmail in Services.............");
+			LiveTvEntity appEntities = this.liveTvRepository.findByEmail(email);
+			LiveTvDto appDTO = new LiveTvDto();
+			appDTO.setId(appEntities.getId());
+			appDTO.setName(appEntities.getName());		
+			appDTO.setEmail(appEntities.getEmail());
+			appDTO.setPassword(appEntities.getPassword());
+			appDTO.setReenterpas(appEntities.getReenterpas());
+			return appDTO;
+		}
+		return null;
+	} */
+
 	
 }

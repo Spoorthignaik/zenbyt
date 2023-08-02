@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan("com.zenbyt")
+@ComponentScan("com.zenbyt.examples")
 public class LiveTvConfiguration {
 	
 	public LiveTvConfiguration () {

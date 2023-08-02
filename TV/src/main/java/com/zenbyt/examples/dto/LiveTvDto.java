@@ -8,6 +8,8 @@ import lombok.Data;
 @Data
 public class LiveTvDto {
 	
+	private int id;
+	
 	@NotNull(message = "Name should not be null")
 	@Size(min=2,max=45,message = "The Name should be more den two char and less den 45 char")
 	private String name;
@@ -15,13 +17,18 @@ public class LiveTvDto {
 	@NotNull(message = "Phone num should not be null")
 	private String phoneNums;
 	
-	@NotNull(message = "email should not be null")
+	@NotNull(message = "email shousld not be null")
 	@Size(min=2,max=45,message = "The E-mail should be more den two char and less den 45 char")
 	private String email;
 	
 	@NotNull(message = "password should not be null")
 	@Size(min=2,max=45,message = "The PassWord should be more den two char and less den 45 char")
 	private String password;
+	
+	@NotNull(message = "password should not be null")
+	@Size(min=2,max=45,message = "The PassWord should be more den two char and less den 45 char")
+	private String reenterpas;
+	
 	
 	
 

@@ -1,11 +1,13 @@
 package com.zenbyt.examples.repository;
 
 import javax.persistence.EntityManager;
+
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
 
 import com.zenbyt.examples.entity.LiveTvEntity;
 
@@ -31,4 +33,16 @@ public class LiveTvRepositoryImpl implements LiveTvRepository{
 		manager.close();
 		return true;
 	}
+	
+	
+	/* @Override
+	public LiveTvEntity findByEmail(String email) {
+		System.out.println("Running the findByEmail in repo");
+		EntityManager entityManager= this.entityManagerFactory.createEntityManager();
+		javax.persistence.Query query=entityManager.createNamedQuery("findByEmail");
+		query.setParameter("mail", email);
+		Object entity=query.getSingleResult();
+		LiveTvEntity ent=(LiveTvEntity)entity;
+		return ent;
+	} */
 }

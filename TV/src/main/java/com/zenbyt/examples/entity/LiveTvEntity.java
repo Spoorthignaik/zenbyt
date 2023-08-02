@@ -21,8 +21,17 @@ public class LiveTvEntity {
 	private String email;
 	@Column(name="l_password")
 	private String password;
+	@Column(name = "s_reenterpas")
+	private String reenterpas;
 	@Column(name="l_phoneNums")
 	private Long phoneNums;
+	@Override
+	public String toString() {
+		return "LiveTvEntity [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password
+				+ ", reenterpas=" + reenterpas + ", phoneNums=" + phoneNums + "]";
+	}
+	
+	
 	
 	
 }

@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "signIn_table")
+@Table(name = "signin_table")
 public class LoginEntity {
 
 	
@@ -21,14 +21,10 @@ public class LoginEntity {
 	@Column(name = "s_passWord")
 	private String passWord;
 	
+	
 	public LoginEntity() {
 		System.out.println("created LoginEntity");
 	}
 	
-	public LoginEntity(int id, String userName, String passWord) {
-		super();
-		this.id = id;
-		this.userName = userName;
-		this.passWord = passWord;
-	}
+	
 }

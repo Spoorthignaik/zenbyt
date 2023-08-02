@@ -6,4 +6,6 @@ public interface LiveTvRepository {
 	
 	boolean save(LiveTvEntity sentity);
 
+     /* LiveTvEntity findByEmail(String email); */
+
 }
